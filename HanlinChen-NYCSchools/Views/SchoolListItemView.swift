@@ -19,9 +19,9 @@ struct SchoolListItemView: View {
                 Circle().stroke(.gray, lineWidth: 4)}.shadow(radius: 3).padding()
             Spacer()
             VStack(alignment: .trailing) {
-                Text("\(schoolName)").font(.headline).multilineTextAlignment(.center).padding(.bottom)
-                VStack(alignment:.leading){
-                    Text("graduation rate: \(graduationRate)").font(.system(size: 11)).foregroundColor(.gray).fontWeight(.bold)
+                Text("\(schoolName)").font(.headline).allowsTightening(true).padding(.bottom)
+                VStack(alignment:.trailing){
+                    Text("graduation rate: \(graduationRate)").font(.system(size: 11)).foregroundColor(.gray).fontWeight(.bold).padding(.bottom,2)
                     Text("total students: \(studentNumber)").font(.system(size: 11)).foregroundColor(.gray).fontWeight(.bold)
                 }
             }
