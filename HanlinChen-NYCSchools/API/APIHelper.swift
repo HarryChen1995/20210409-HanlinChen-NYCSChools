@@ -56,5 +56,23 @@ class SchoolAPIHelper {
         return .failure(.RefusedConnectionError)
     }
     
+    static func fetchSATScore() async -> Result<[SAT], APIError>{
+        let satUrl = "https://data.cityofnewyork.us/resource/f9bf-2cp4.json"
+        do {
+            let url = URL(string: satUrl)
+            let ( data, response) = try await URLSession.shared.data(from: url!)
+            if let  error  =  HTTPURLResponse.getAPIErrorFromResponse(response: response)  {
+                return .failure(error)
+            }
+            
+            let satScores = try! JSONDecoder().decode([SAT].self,  from: data)
+            return .success(satScores)
+        }
+        catch(let error){
+            print(error.localizedDescription)
+        }
+        return .failure(.RefusedConnectionError)
+    }
+    
     
 }

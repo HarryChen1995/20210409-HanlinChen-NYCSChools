@@ -11,6 +11,8 @@
 		31158C4027D9861A0039C9D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31158C3F27D9861A0039C9D3 /* ContentView.swift */; };
 		31158C4227D9861B0039C9D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31158C4127D9861B0039C9D3 /* Assets.xcassets */; };
 		31158C4527D9861B0039C9D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31158C4427D9861B0039C9D3 /* Preview Assets.xcassets */; };
+		3128465127DA576B00EB44B2 /* SAT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128465027DA576B00EB44B2 /* SAT.swift */; };
+		3128465327DA63D500EB44B2 /* SchoolDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128465227DA63D500EB44B2 /* SchoolDetailView.swift */; };
 		3195071527D986DA00461843 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3195071427D986DA00461843 /* School.swift */; };
 		3195071727D988BE00461843 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3195071627D988BE00461843 /* APIHelper.swift */; };
 		3195071927D98B2000461843 /* SchoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3195071827D98B2000461843 /* SchoolViewModel.swift */; };
@@ -23,6 +25,8 @@
 		31158C3F27D9861A0039C9D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		31158C4127D9861B0039C9D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31158C4427D9861B0039C9D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3128465027DA576B00EB44B2 /* SAT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAT.swift; sourceTree = "<group>"; };
+		3128465227DA63D500EB44B2 /* SchoolDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailView.swift; sourceTree = "<group>"; };
 		3195071427D986DA00461843 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		3195071627D988BE00461843 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		3195071827D98B2000461843 /* SchoolViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolViewModel.swift; sourceTree = "<group>"; };
@@ -83,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				3195071A27D9945900461843 /* SchoolListItemView.swift */,
+				3128465227DA63D500EB44B2 /* SchoolDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				3195071427D986DA00461843 /* School.swift */,
+				3128465027DA576B00EB44B2 /* SAT.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -185,7 +191,9 @@
 				3195071927D98B2000461843 /* SchoolViewModel.swift in Sources */,
 				31158C4027D9861A0039C9D3 /* ContentView.swift in Sources */,
 				3195071B27D9945900461843 /* SchoolListItemView.swift in Sources */,
+				3128465127DA576B00EB44B2 /* SAT.swift in Sources */,
 				3195071527D986DA00461843 /* School.swift in Sources */,
+				3128465327DA63D500EB44B2 /* SchoolDetailView.swift in Sources */,
 				31158C3E27D9861A0039C9D3 /* HanlinChen_NYCSchoolsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
