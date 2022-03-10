@@ -12,6 +12,7 @@ struct SchoolListItemView: View {
     var studentNumber:Int
     var graduationRate:String
     var body: some View {
+        VStack{
         HStack {
             
             Image("schoolicon").resizable().frame(width: 60, height: 60).clipShape(Circle()).overlay {
@@ -24,6 +25,8 @@ struct SchoolListItemView: View {
                     Text("total students: \(studentNumber)").font(.system(size: 11)).foregroundColor(.gray).fontWeight(.bold)
                 }
             }
+        }.padding(.horizontal)
+            Divider()
         }
     }
 }
